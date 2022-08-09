@@ -1,0 +1,161 @@
+#search_bar {
+  margin-bottom: 10px;
+  margin-left: 20px;
+  margin-top: 10px;
+  padding: 10px 5px 5px 20px;
+}
+
+#search_bar i {
+  color: #A9A9A9;
+}
+
+#search_bar input {
+  width:80%;
+  border:2px solid #aaa;
+  border-radius:4px;
+  margin:8px 0;
+  outline:none;
+  padding:5px;
+  box-sizing:border-box;
+  transition:.3s;
+  color: darkgray;
+}
+
+.cardsmall i {
+  color: #A9A9A9;
+}
+
+.cardsmall {
+  background: linear-gradient(#A9A9A9,#A9A9A9) 5px calc(100% - 16px)/2px calc(100% - 40px)  no-repeat;
+  display: table;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.cardsmall .cardsmall {
+  margin-top: 0;
+}
+.cardsmall {
+  position:relative;
+}
+.cardsmall .cardsmall:before {
+  content: "";
+  position: absolute;
+  top: 13px;
+  right: calc(100% + 3px);
+  width: 30px;
+  height: 2px;
+  background:#808080;
+}
+
+.cardsmall .cardsmall:last-child:after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  right: calc(100% + 5px);
+  width: 30px;
+  height: 100vh;
+  background: #fff;
+}
+
+
+
+.cardsmall-header .arrowed {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+.cardsmall-header .arrowed::before {
+  content: "\f0d7";
+  display: inline-block;
+  font-family: 'FontAwesome';
+  color: #808080;
+
+  position: relative;
+  right: 0;
+  transition: all 0.3s;
+}
+
+.arrowed[aria-expanded="true"]:after {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.cardsmall-header {
+  border-radius: calc(.25rem - 1px);
+}
+
+
+
+
+  
+
+  .cardsmall-content {
+
+    padding: 10px 5px 5px 20px;
+    background:linear-gradient(#A9A9A9,#a9a9a9) 5px 23px/12px 2px no-repeat;
+    overflow:hidden; /*needed to hide the overflow of the after element below*/
+  
+  }
+
+
+
+
+  .collapseblock {
+    display: block;
+  }
+
+
+
+
+  /* 0------------------------------- */
+.input-icons i {
+    position: absolute;
+    border:0px;
+}
+  
+
+input[type="text"] {
+    text-align: center;
+}
+  /* <i class="fa fa-search icon"></i> */
+.icon {
+    padding: 10px;
+    padding-right: 40px;
+    /* min-width: 20px; */
+}
+  
+.input-field {
+    padding: 5px;
+    text-align: center;
+}
+
+
+td {
+    text-align: center;
+    /* center checkbox horizontally */
+    vertical-align: middle;
+    /* center checkbox vertically */
+  }
+  
+table {
+    border: 1px solid;
+    width: 200px;
+}
+  
+  /* tr {
+    height: 80px;
+  } */
+
+*{
+    color:#808080;
+}
+
+
+
+*:focus {
+    outline: none !important;
+}
